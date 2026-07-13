@@ -1,0 +1,3952 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="1180"
+    height="610"
+    viewBox="0 0 1180 610"
+    role="img"
+    aria-labelledby="title description"
+>
+
+    <title id="title">
+        Anoop Prakash GitHub Profile Banner
+    </title>
+
+    <desc id="description">
+        Animated developer profile banner with an ASCII portrait,
+        terminal profile information, character-by-character
+        typing roles, skills, and clickable profile links.
+    </desc>
+
+
+    <style>
+
+        text {
+            font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+        }
+
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+        /* ===================================================
+           SOCIAL LINKS
+        =================================================== */
+
+
+        .social-link {
+            opacity: 0.86;
+            cursor: pointer;
+        }
+
+
+        .social-hitbox {
+            fill: transparent;
+            pointer-events: all;
+        }
+
+
+        .social-link text {
+            transition:
+                opacity 0.25s ease,
+                filter 0.25s ease;
+        }
+
+
+        .social-underline {
+            stroke-dasharray: 1;
+            stroke-dashoffset: 1;
+            opacity: 0;
+
+            transition:
+                stroke-dashoffset 0.3s ease,
+                opacity 0.3s ease;
+        }
+
+
+        .social-link:hover {
+            opacity: 1;
+        }
+
+
+        .social-link:hover text {
+            filter:
+                drop-shadow(
+                    0 0 5px
+                    #06B6D4
+                );
+        }
+
+
+        .social-link:hover
+        .social-underline {
+            stroke-dashoffset: 0;
+            opacity: 1;
+        }
+
+
+        /* ===================================================
+           CLICKABLE PROFILE VALUES
+        =================================================== */
+
+
+        .profile-link {
+            opacity: 0.92;
+            cursor: pointer;
+        }
+
+
+        .profile-hitbox {
+            fill: transparent;
+            pointer-events: all;
+        }
+
+
+        .profile-link text {
+            transition:
+                opacity 0.25s ease,
+                filter 0.25s ease;
+        }
+
+
+        .profile-underline {
+            stroke-dasharray: 1;
+            stroke-dashoffset: 1;
+            opacity: 0;
+
+            transition:
+                stroke-dashoffset 0.3s ease,
+                opacity 0.3s ease;
+        }
+
+
+        .profile-link:hover {
+            opacity: 1;
+        }
+
+
+        .profile-link:hover text {
+            filter:
+                drop-shadow(
+                    0 0 5px
+                    #06B6D4
+                );
+        }
+
+
+        .profile-link:hover
+        .profile-underline {
+            stroke-dashoffset: 0;
+            opacity: 1;
+        }
+
+    </style>
+
+
+    
+    <defs>
+
+        <linearGradient
+            id="borderGradient"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="100%"
+        >
+            <stop offset="0%" stop-color="#2563EB" />
+            <stop offset="50%" stop-color="#06B6D4" />
+            <stop offset="100%" stop-color="#10B981" />
+
+            <animateTransform
+                attributeName="gradientTransform"
+                type="rotate"
+                from="0 .5 .5"
+                to="360 .5 .5"
+                dur="7.0s"
+                repeatCount="indefinite"
+            />
+        </linearGradient>
+
+
+        <linearGradient
+            id="asciiGradient"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="100%"
+        >
+            <stop
+                offset="0%"
+                stop-color="#2563EB"
+            >
+                <animate
+                    attributeName="stop-color"
+                    values="
+                        #2563EB;
+                        #06B6D4;
+                        #10B981;
+                        #2563EB
+                    "
+                    dur="8.0s"
+                    repeatCount="indefinite"
+                />
+            </stop>
+
+            <stop
+                offset="50%"
+                stop-color="#06B6D4"
+            >
+                <animate
+                    attributeName="stop-color"
+                    values="
+                        #06B6D4;
+                        #10B981;
+                        #2563EB;
+                        #06B6D4
+                    "
+                    dur="8.0s"
+                    repeatCount="indefinite"
+                />
+            </stop>
+
+            <stop
+                offset="100%"
+                stop-color="#10B981"
+            >
+                <animate
+                    attributeName="stop-color"
+                    values="
+                        #10B981;
+                        #2563EB;
+                        #06B6D4;
+                        #10B981
+                    "
+                    dur="8.0s"
+                    repeatCount="indefinite"
+                />
+            </stop>
+        </linearGradient>
+
+
+        <radialGradient id="blueGlow">
+            <stop
+                offset="0%"
+                stop-color="#60A5FA"
+                stop-opacity=".22"
+            />
+
+            <stop
+                offset="100%"
+                stop-color="#60A5FA"
+                stop-opacity="0"
+            />
+        </radialGradient>
+
+
+        <radialGradient id="purpleGlow">
+            <stop
+                offset="0%"
+                stop-color="#A78BFA"
+                stop-opacity=".18"
+            />
+
+            <stop
+                offset="100%"
+                stop-color="#A78BFA"
+                stop-opacity="0"
+            />
+        </radialGradient>
+
+
+        <radialGradient id="emeraldGlow">
+            <stop
+                offset="0%"
+                stop-color="#6EE7B7"
+                stop-opacity=".14"
+            />
+
+            <stop
+                offset="100%"
+                stop-color="#6EE7B7"
+                stop-opacity="0"
+            />
+        </radialGradient>
+
+
+        <filter
+            id="asciiGlow"
+            x="-50%"
+            y="-50%"
+            width="200%"
+            height="200%"
+        >
+            <feGaussianBlur
+                stdDeviation="2.2"
+                result="blur"
+            />
+
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+
+
+        <filter
+            id="panelShadow"
+            x="-20%"
+            y="-20%"
+            width="140%"
+            height="140%"
+        >
+            <feDropShadow
+                dx="0"
+                dy="16"
+                stdDeviation="24"
+                flood-color="#000000"
+                flood-opacity=".28"
+            />
+        </filter>
+
+
+        <clipPath id="leftPanelClip">
+            <rect
+                x="28"
+                y="28"
+                width="430"
+                height="554"
+                rx="22"
+            />
+        </clipPath>
+
+
+        <clipPath id="rightPanelClip">
+            <rect
+                x="482"
+                y="28"
+                width="670"
+                height="554"
+                rx="22"
+            />
+        </clipPath>
+
+    </defs>
+    
+
+    
+    <rect
+        width="1180"
+        height="610"
+        rx="26"
+        fill="#FFFFFF"
+    />
+
+
+    <ellipse
+        cx="180"
+        cy="100"
+        rx="360"
+        ry="300"
+        fill="url(#blueGlow)"
+    >
+        <animate
+            attributeName="cx"
+            values="180;270;180"
+            dur="10.0s"
+            repeatCount="indefinite"
+        />
+    </ellipse>
+
+
+    <ellipse
+        cx="970"
+        cy="170"
+        rx="390"
+        ry="330"
+        fill="url(#purpleGlow)"
+    >
+        <animate
+            attributeName="cy"
+            values="170;250;170"
+            dur="12.0s"
+            repeatCount="indefinite"
+        />
+    </ellipse>
+
+
+    <ellipse
+        cx="670"
+        cy="600"
+        rx="430"
+        ry="230"
+        fill="url(#emeraldGlow)"
+    >
+        <animate
+            attributeName="cx"
+            values="670;780;670"
+            dur="14.0s"
+            repeatCount="indefinite"
+        />
+    </ellipse>
+    
+
+    <g opacity=".45">
+            <circle
+                cx="272"
+                cy="235"
+                r="0.82"
+                fill="#64748B"
+            >
+                <animate
+                    attributeName="cy"
+                    values="235;217;235"
+                    dur="9.64s"
+                    repeatCount="indefinite"
+                />
+
+                <animate
+                    attributeName="opacity"
+                    values=".1;.65;.1"
+                    dur="9.64s"
+                    repeatCount="indefinite"
+                />
+            </circle>
+            
+            <circle
+                cx="347"
+                cy="237"
+                r="2.17"
+                fill="#64748B"
+            >
+                <animate
+                    attributeName="cy"
+                    values="237;215;237"
+                    dur="11.74s"
+                    repeatCount="indefinite"
+                />
+
+                <animate
+                    attributeName="opacity"
+                    values=".1;.65;.1"
+                    dur="11.74s"
+                    repeatCount="indefinite"
+                />
+            </circle>
+            
+            <circle
+                cx="72"
+                cy="487"
+                r="1.25"
+                fill="#64748B"
+            >
+                <animate
+                    attributeName="cy"
+                    values="487;442;487"
+                    dur="10.93s"
+                    repeatCount="indefinite"
+                />
+
+                <animate
+                    attributeName="opacity"
+                    values=".1;.65;.1"
+                    dur="10.93s"
+                    repeatCount="indefinite"
+                />
+            </circle>
+            
+            <circle
+                cx="970"
+                cy="122"
+                r="0.94"
+                fill="#64748B"
+            >
+                <animate
+                    attributeName="cy"
+                    values="122;76;122"
+                    dur="7.31s"
+                    repeatCount="indefinite"
+                />
+
+                <animate
+                    attributeName="opacity"
+                    values=".1;.65;.1"
+                    dur="7.31s"
+                    repeatCount="indefinite"
+                />
+            </circle>
+            
+            <circle
+                cx="269"
+                cy="210"
+                r="1.00"
+                fill="#64748B"
+            >
+                <animate
+                    attributeName="cy"
+                    values="210;168;210"
+                    dur="7.12s"
+                    repeatCount="indefinite"
+                />
+
+                <animate
+                    attributeName="opacity"
+                    values=".1;.65;.1"
+                    dur="7.12s"
+                    repeatCount="indefinite"
+                />
+            </circle>
+            
+            <circle
+                cx="181"
+                cy="538"
+                r="1.14"
+                fill="#64748B"
+            >
+                <animate
+                    attributeName="cy"
+                    values="538;503;538"
+                    dur="7.87s"
+                    repeatCount="indefinite"
+                />
+
+                <animate
+                    attributeName="opacity"
+                    values=".1;.65;.1"
+                    dur="7.87s"
+                    repeatCount="indefinite"
+                />
+            </circle>
+            
+            <circle
+                cx="114"
+                cy="539"
+                r="1.57"
+                fill="#64748B"
+            >
+                <animate
+                    attributeName="cy"
+                    values="539;505;539"
+                    dur="7.94s"
+                    repeatCount="indefinite"
+                />
+
+                <animate
+                    attributeName="opacity"
+                    values=".1;.65;.1"
+                    dur="7.94s"
+                    repeatCount="indefinite"
+                />
+            </circle>
+            
+            <circle
+                cx="900"
+                cy="281"
+                r="0.88"
+                fill="#64748B"
+            >
+                <animate
+                    attributeName="cy"
+                    values="281;242;281"
+                    dur="9.25s"
+                    repeatCount="indefinite"
+                />
+
+                <animate
+                    attributeName="opacity"
+                    values=".1;.65;.1"
+                    dur="9.25s"
+                    repeatCount="indefinite"
+                />
+            </circle>
+            
+            <circle
+                cx="906"
+                cy="217"
+                r="1.47"
+                fill="#64748B"
+            >
+                <animate
+                    attributeName="cy"
+                    values="217;166;217"
+                    dur="8.25s"
+                    repeatCount="indefinite"
+                />
+
+                <animate
+                    attributeName="opacity"
+                    values=".1;.65;.1"
+                    dur="8.25s"
+                    repeatCount="indefinite"
+                />
+            </circle>
+            
+            <circle
+                cx="533"
+                cy="474"
+                r="1.87"
+                fill="#64748B"
+            >
+                <animate
+                    attributeName="cy"
+                    values="474;438;474"
+                    dur="14.00s"
+                    repeatCount="indefinite"
+                />
+
+                <animate
+                    attributeName="opacity"
+                    values=".1;.65;.1"
+                    dur="14.00s"
+                    repeatCount="indefinite"
+                />
+            </circle>
+            
+            <circle
+                cx="1127"
+                cy="410"
+                r="1.42"
+                fill="#64748B"
+            >
+                <animate
+                    attributeName="cy"
+                    values="410;384;410"
+                    dur="7.46s"
+                    repeatCount="indefinite"
+                />
+
+                <animate
+                    attributeName="opacity"
+                    values=".1;.65;.1"
+                    dur="7.46s"
+                    repeatCount="indefinite"
+                />
+            </circle>
+            
+            <circle
+                cx="246"
+                cy="277"
+                r="1.17"
+                fill="#64748B"
+            >
+                <animate
+                    attributeName="cy"
+                    values="277;262;277"
+                    dur="8.80s"
+                    repeatCount="indefinite"
+                />
+
+                <animate
+                    attributeName="opacity"
+                    values=".1;.65;.1"
+                    dur="8.80s"
+                    repeatCount="indefinite"
+                />
+            </circle>
+            
+            <circle
+                cx="75"
+                cy="35"
+                r="1.21"
+                fill="#64748B"
+            >
+                <animate
+                    attributeName="cy"
+                    values="35;14;35"
+                    dur="7.51s"
+                    repeatCount="indefinite"
+                />
+
+                <animate
+                    attributeName="opacity"
+                    values=".1;.65;.1"
+                    dur="7.51s"
+                    repeatCount="indefinite"
+                />
+            </circle>
+            
+            <circle
+                cx="790"
+                cy="243"
+                r="2.16"
+                fill="#64748B"
+            >
+                <animate
+                    attributeName="cy"
+                    values="243;223;243"
+                    dur="13.91s"
+                    repeatCount="indefinite"
+                />
+
+                <animate
+                    attributeName="opacity"
+                    values=".1;.65;.1"
+                    dur="13.91s"
+                    repeatCount="indefinite"
+                />
+            </circle>
+            
+            <circle
+                cx="58"
+                cy="208"
+                r="1.94"
+                fill="#64748B"
+            >
+                <animate
+                    attributeName="cy"
+                    values="208;153;208"
+                    dur="10.81s"
+                    repeatCount="indefinite"
+                />
+
+                <animate
+                    attributeName="opacity"
+                    values=".1;.65;.1"
+                    dur="10.81s"
+                    repeatCount="indefinite"
+                />
+            </circle>
+            
+            <circle
+                cx="48"
+                cy="284"
+                r="1.69"
+                fill="#64748B"
+            >
+                <animate
+                    attributeName="cy"
+                    values="284;265;284"
+                    dur="7.50s"
+                    repeatCount="indefinite"
+                />
+
+                <animate
+                    attributeName="opacity"
+                    values=".1;.65;.1"
+                    dur="7.50s"
+                    repeatCount="indefinite"
+                />
+            </circle>
+            
+            <circle
+                cx="594"
+                cy="543"
+                r="1.60"
+                fill="#64748B"
+            >
+                <animate
+                    attributeName="cy"
+                    values="543;515;543"
+                    dur="7.22s"
+                    repeatCount="indefinite"
+                />
+
+                <animate
+                    attributeName="opacity"
+                    values=".1;.65;.1"
+                    dur="7.22s"
+                    repeatCount="indefinite"
+                />
+            </circle>
+            
+            <circle
+                cx="530"
+                cy="230"
+                r="1.63"
+                fill="#64748B"
+            >
+                <animate
+                    attributeName="cy"
+                    values="230;187;230"
+                    dur="13.60s"
+                    repeatCount="indefinite"
+                />
+
+                <animate
+                    attributeName="opacity"
+                    values=".1;.65;.1"
+                    dur="13.60s"
+                    repeatCount="indefinite"
+                />
+            </circle>
+            
+            <circle
+                cx="1120"
+                cy="505"
+                r="1.57"
+                fill="#64748B"
+            >
+                <animate
+                    attributeName="cy"
+                    values="505;453;505"
+                    dur="10.17s"
+                    repeatCount="indefinite"
+                />
+
+                <animate
+                    attributeName="opacity"
+                    values=".1;.65;.1"
+                    dur="10.17s"
+                    repeatCount="indefinite"
+                />
+            </circle>
+            
+            <circle
+                cx="149"
+                cy="405"
+                r="0.98"
+                fill="#64748B"
+            >
+                <animate
+                    attributeName="cy"
+                    values="405;383;405"
+                    dur="8.58s"
+                    repeatCount="indefinite"
+                />
+
+                <animate
+                    attributeName="opacity"
+                    values=".1;.65;.1"
+                    dur="8.58s"
+                    repeatCount="indefinite"
+                />
+            </circle>
+            </g>
+
+    
+    <g filter="url(#panelShadow)">
+
+        <rect
+            x="28"
+            y="28"
+            width="430"
+            height="554"
+            rx="22"
+            fill="#F8FAFC"
+            fill-opacity=".78"
+            stroke="url(#borderGradient)"
+            stroke-opacity=".45"
+        />
+
+
+        <rect
+            x="482"
+            y="28"
+            width="670"
+            height="554"
+            rx="22"
+            fill="#F8FAFC"
+            fill-opacity=".82"
+            stroke="url(#borderGradient)"
+            stroke-opacity=".45"
+        />
+
+    </g>
+    
+
+    <g clip-path="url(#leftPanelClip)">
+        <g filter="url(#asciiGlow)">
+
+            <animateTransform
+                attributeName="transform"
+                type="translate"
+                values="0 3;0 -3;0 3"
+                dur="6.0s"
+                repeatCount="indefinite"
+            />
+        
+            <clipPath id="asciiRowClip0">
+
+                <rect
+                    x="72.85"
+                    y="48.00"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.000s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="56.86"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip0)"
+                xml:space="preserve"
+            > ;:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,::I </text>
+            
+            <clipPath id="asciiRowClip1">
+
+                <rect
+                    x="72.85"
+                    y="56.86"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.025s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="65.72"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip1)"
+                xml:space="preserve"
+            >^~&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;..&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;.&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;~`</text>
+            
+            <clipPath id="asciiRowClip2">
+
+                <rect
+                    x="72.85"
+                    y="65.72"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.050s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="74.59"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip2)"
+                xml:space="preserve"
+            >^!                                                            I`</text>
+            
+            <clipPath id="asciiRowClip3">
+
+                <rect
+                    x="72.85"
+                    y="74.59"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.075s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="83.45"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip3)"
+                xml:space="preserve"
+            >^!                     .      ..`^`      .                    l`</text>
+            
+            <clipPath id="asciiRowClip4">
+
+                <rect
+                    x="72.85"
+                    y="83.45"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.100s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="92.31"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip4)"
+                xml:space="preserve"
+            >^!                       ;1cZkooMWWaqU/i.                     l`</text>
+            
+            <clipPath id="asciiRowClip5">
+
+                <rect
+                    x="72.85"
+                    y="92.31"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.125s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="101.17"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip5)"
+                xml:space="preserve"
+            >^!                    :fp8$$$$$$$$$$$$$%bn;                   l`</text>
+            
+            <clipPath id="asciiRowClip6">
+
+                <rect
+                    x="72.85"
+                    y="101.17"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.150s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="110.03"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip6)"
+                xml:space="preserve"
+            >^!                 ^/LW$$8888&amp;BB@@@B%&amp;&amp;BB%&amp;|                  l`</text>
+            
+            <clipPath id="asciiRowClip7">
+
+                <rect
+                    x="72.85"
+                    y="110.03"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.175s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="118.90"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip7)"
+                xml:space="preserve"
+            >^!                &quot;QB@$BB$$$$$$@@$$@$B8&amp;W8%Bt                 l`</text>
+            
+            <clipPath id="asciiRowClip8">
+
+                <rect
+                    x="72.85"
+                    y="118.90"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.200s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="127.76"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip8)"
+                xml:space="preserve"
+            >^!                |$B@$$$#bppk#W%@@$$$$%&amp;%Maa~                l`</text>
+            
+            <clipPath id="asciiRowClip9">
+
+                <rect
+                    x="72.85"
+                    y="127.76"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.225s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="136.62"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip9)"
+                xml:space="preserve"
+            >^!                lh$$Bqr[+i!i?{/ncJp8$$B&amp;8ooL                l`</text>
+            
+            <clipPath id="asciiRowClip10">
+
+                <rect
+                    x="72.85"
+                    y="136.62"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.250s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="145.48"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip10)"
+                xml:space="preserve"
+            >^!                 q$#z{+l:,::;l!i_}rUa@BB@8%O                l`</text>
+            
+            <clipPath id="asciiRowClip11">
+
+                <rect
+                    x="72.85"
+                    y="145.48"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.275s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="154.34"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip11)"
+                xml:space="preserve"
+            >^!                .h$J+?_l:,,,:li~?{/ftOB@@BB0                l`</text>
+            
+            <clipPath id="asciiRowClip12">
+
+                <rect
+                    x="72.85"
+                    y="154.34"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.300s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="163.21"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip12)"
+                xml:space="preserve"
+            >^!                 Z8(!+I^`^^``^&quot;,l?{)[[OBB%%C                l`</text>
+            
+            <clipPath id="asciiRowClip13">
+
+                <rect
+                    x="72.85"
+                    y="163.21"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.325s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="172.07"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip13)"
+                xml:space="preserve"
+            >^!                 Jpi11{[!^``^;+/nj/j),&quot;r%BBX                l`</text>
+            
+            <clipPath id="asciiRowClip14">
+
+                <rect
+                    x="72.85"
+                    y="172.07"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.350s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="180.93"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip14)"
+                xml:space="preserve"
+            >^!               . uL{rxcLCtl^!jLpwCUJLx-,J8$x .              l`</text>
+            
+            <clipPath id="asciiRowClip15">
+
+                <rect
+                    x="72.85"
+                    y="180.93"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.375s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="189.79"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip15)"
+                xml:space="preserve"
+            >^!                .Qd)rvCdZCZYqCJcXbdbQoz]XM8t^               l`</text>
+            
+            <clipPath id="asciiRowClip16">
+
+                <rect
+                    x="72.85"
+                    y="189.79"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.400s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="198.66"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip16)"
+                xml:space="preserve"
+            >^!                ,vc~rjzL|{m]LQ/ruLYJjY] |mfYt               l`</text>
+            
+            <clipPath id="asciiRowClip17">
+
+                <rect
+                    x="72.85"
+                    y="198.66"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.425s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="207.52"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip17)"
+                xml:space="preserve"
+            >^!                ,[fii!!l!x?&#x27;_Lf?-+_+{xI&quot;lcrt1               l`</text>
+            
+            <clipPath id="asciiRowClip18">
+
+                <rect
+                    x="72.85"
+                    y="207.52"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.450s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="216.38"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip18)"
+                xml:space="preserve"
+            >^!                .I~~_--?)1,&quot;?(uj}{{{[!;II{Jf~               l`</text>
+            
+            <clipPath id="asciiRowClip19">
+
+                <rect
+                    x="72.85"
+                    y="216.38"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.475s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="225.24"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip19)"
+                xml:space="preserve"
+            >^!                 ,l&#x27;&quot;;:,;)f/YX|-;Ill!!i~_/((`               l`</text>
+            
+            <clipPath id="asciiRowClip20">
+
+                <rect
+                    x="72.85"
+                    y="225.24"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.500s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="234.10"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip20)"
+                xml:space="preserve"
+            >^!                  Il;I+//fxjcXnux{-?[?_~}}i`                l`</text>
+            
+            <clipPath id="asciiRowClip21">
+
+                <rect
+                    x="72.85"
+                    y="234.10"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.525s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="242.97"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip21)"
+                xml:space="preserve"
+            >^!                  .II;XaXj(|rXLb#0[[[???&quot;^                  l`</text>
+            
+            <clipPath id="asciiRowClip22">
+
+                <rect
+                    x="72.85"
+                    y="242.97"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.550s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="251.83"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip22)"
+                xml:space="preserve"
+            >^!                   &#x27;!l~+-][}1|/)[}}}}1|+                    l`</text>
+            
+            <clipPath id="asciiRowClip23">
+
+                <rect
+                    x="72.85"
+                    y="251.83"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.575s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="260.69"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip23)"
+                xml:space="preserve"
+            >^!                    &quot;?~l!~?}[?__]{/tfxt&quot;                    l`</text>
+            
+            <clipPath id="asciiRowClip24">
+
+                <rect
+                    x="72.85"
+                    y="260.69"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.600s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="269.55"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip24)"
+                xml:space="preserve"
+            >^i                     &quot;-iI;,&quot;:li?{/uXYv[&#x27;                    l`</text>
+            
+            <clipPath id="asciiRowClip25">
+
+                <rect
+                    x="72.85"
+                    y="269.55"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.625s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="278.41"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip25)"
+                xml:space="preserve"
+            >^!                      &quot;}?+i~+]1/uJZOJr-`.                   l`</text>
+            
+            <clipPath id="asciiRowClip26">
+
+                <rect
+                    x="72.85"
+                    y="278.41"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.650s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="287.28"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip26)"
+                xml:space="preserve"
+            >^!                      ._(xvccYQpabOUn[^ 0- .                l`</text>
+            
+            <clipPath id="asciiRowClip27">
+
+                <rect
+                    x="72.85"
+                    y="287.28"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.675s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="296.14"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip27)"
+                xml:space="preserve"
+            >^!                       l-(vCmwwwZCu{;  r%h~ .               l`</text>
+            
+            <clipPath id="asciiRowClip28">
+
+                <rect
+                    x="72.85"
+                    y="296.14"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.700s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="305.00"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip28)"
+                xml:space="preserve"
+            >^i                       ~i-1|frnr)_^  ,0$88#[   .            l`</text>
+            
+            <clipPath id="asciiRowClip29">
+
+                <rect
+                    x="72.85"
+                    y="305.00"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.725s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="313.86"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip29)"
+                xml:space="preserve"
+            >^!                 .   `&#x27;-}~]}))_&quot;    ]#$@$B%8n;              l`</text>
+            
+            <clipPath id="asciiRowClip30">
+
+                <rect
+                    x="72.85"
+                    y="313.86"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.750s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="322.72"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip30)"
+                xml:space="preserve"
+            >^!                   ,?Y` -}{[I&#x27;     r@$B@@$@B$8wf!           l`</text>
+            
+            <clipPath id="asciiRowClip31">
+
+                <rect
+                    x="72.85"
+                    y="322.72"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.775s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="331.59"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip31)"
+                xml:space="preserve"
+            >^!               ;{Xd*@Z I}]!    . .U@%B$@@@B@@$$$&amp;qc[:     . l`</text>
+            
+            <clipPath id="asciiRowClip32">
+
+                <rect
+                    x="72.85"
+                    y="331.59"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.800s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="340.45"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip32)"
+                xml:space="preserve"
+            >^!           I)Xd&amp;$@&amp;o@vj%$p0}    ^Z@W&amp;%@BBBB$@@B%B$$%*wc{;   I`</text>
+            
+            <clipPath id="asciiRowClip33">
+
+                <rect
+                    x="72.85"
+                    y="340.45"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.825s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="349.31"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip33)"
+                xml:space="preserve"
+            >^!       &quot;[Xb&amp;$$$%&amp;oaMo?p$*&amp;$$J&#x27; :d%W&amp;&amp;&amp;%@BB@B@$@BBB%%B@$%omn_~`</text>
+            
+            <clipPath id="asciiRowClip34">
+
+                <rect
+                    x="72.85"
+                    y="349.31"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.850s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="358.17"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip34)"
+                xml:space="preserve"
+            >^!     {Z*B$B888WM**o8X xB&amp;$%L_ ;b8W&amp;88&amp;8BBB@$$@BB%BB8%8888%B8O </text>
+            
+            <clipPath id="asciiRowClip35">
+
+                <rect
+                    x="72.85"
+                    y="358.17"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.875s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="367.03"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip35)"
+                xml:space="preserve"
+            >^!    z@%8WMM&amp;%&amp;##*o*%+ cB@kl  :k8&amp;8&amp;&amp;&amp;&amp;8B@$$@BB%%%8%88%8888%@d </text>
+            
+            <clipPath id="asciiRowClip36">
+
+                <rect
+                    x="72.85"
+                    y="367.03"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.900s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="375.90"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip36)"
+                xml:space="preserve"
+            >^i . |$MWWMo#&amp;%M#**a%w `b&amp;$C  &quot;d%W&amp;WWWW8@$$@B%8%8&amp;8%888888%%&amp;%q </text>
+            
+            <clipPath id="asciiRowClip37">
+
+                <rect
+                    x="72.85"
+                    y="375.90"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.925s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="384.76"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip37)"
+                xml:space="preserve"
+            >^!  &quot;o&amp;&amp;&amp;W#a*&amp;M#**oo@1 jMd$X `w%W&amp;&amp;&amp;WW%$@%8&amp;W&amp;888&amp;8&amp;8%8%%%BBB@b </text>
+            
+            <clipPath id="asciiRowClip38">
+
+                <rect
+                    x="72.85"
+                    y="384.76"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.950s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="393.62"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip38)"
+                xml:space="preserve"
+            >^i  )8#&amp;&amp;W*aoM###*oWM.[8oq&amp;- 0%WWWWW&amp;BB%%8&amp;WW&amp;888&amp;&amp;88%@@@@@B8Bq </text>
+            
+            <clipPath id="asciiRowClip39">
+
+                <rect
+                    x="72.85"
+                    y="393.62"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="0.975s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="402.48"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip39)"
+                xml:space="preserve"
+            >^i &#x27;0#MW&amp;Moha##M#*aBJ&quot;W8akk.YB#WWM#&amp;B8W&amp;8&amp;W&amp;&amp;&amp;&amp;&amp;&amp;W88&amp;8%%%%BB&amp;%p </text>
+            
+            <clipPath id="asciiRowClip40">
+
+                <rect
+                    x="72.85"
+                    y="402.48"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="1.000s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="411.34"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip40)"
+                xml:space="preserve"
+            >^~ [#aM&amp;WMoha*#**oo$?U$%#*Xr@MMM#M8%&amp;WW&amp;W&amp;&amp;&amp;&amp;WW&amp;&amp;88&amp;8&amp;8%%BBB8%q </text>
+            
+            <clipPath id="asciiRowClip41">
+
+                <rect
+                    x="72.85"
+                    y="411.34"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="1.025s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="420.21"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip41)"
+                xml:space="preserve"
+            >^!.Z#*MWW#aho#M#**Wa}@B@&amp;#0WMM##M%%&amp;WWW&amp;WW&amp;W&amp;WWW%%8BB@$$@@BB8Bp </text>
+            
+            <clipPath id="asciiRowClip42">
+
+                <rect
+                    x="72.85"
+                    y="420.21"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="1.050s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="429.07"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip42)"
+                xml:space="preserve"
+            >^;(M**#WM*ahoMM#*o%Q0$B@MMM#M#*WB8M&amp;&amp;WWWWW&amp;&amp;WMWB@%$$@BB%88&amp;8&amp;Bq </text>
+            
+            <clipPath id="asciiRowClip43">
+
+                <rect
+                    x="72.85"
+                    y="429.07"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="1.075s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="437.93"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip43)"
+                xml:space="preserve"
+            >&#x27;[q#W**M*oaaa*M#oa&amp;O&amp;$$BaM###*W@%&amp;&amp;&amp;&amp;WWWW&amp;&amp;WW&amp;B$@$$B8&amp;&amp;88888%$k </text>
+            
+            <clipPath id="asciiRowClip44">
+
+                <rect
+                    x="72.85"
+                    y="437.93"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="1.100s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="446.79"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip44)"
+                xml:space="preserve"
+            > Ca*8#oM*ahha*M#**W#$$$&amp;oWW##WB8&amp;&amp;&amp;W&amp;&amp;&amp;&amp;&amp;888%@$$$$$@%%%%8%B@@$b </text>
+            
+            <clipPath id="asciiRowClip45">
+
+                <rect
+                    x="72.85"
+                    y="446.79"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="1.125s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="455.66"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip45)"
+                xml:space="preserve"
+            > m#M%Ma##oha*###**8$@$@MMMM#8B&amp;MW&amp;WMMWW&amp;&amp;&amp;%@@$$$@@%8&amp;8%88B$@%Bp </text>
+            
+            <clipPath id="asciiRowClip46">
+
+                <rect
+                    x="72.85"
+                    y="455.66"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="1.150s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="464.52"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip46)"
+                xml:space="preserve"
+            > q&amp;&amp;@8h**oaa***#**%$@$WM&amp;MM&amp;B&amp;&amp;W&amp;&amp;&amp;W&amp;&amp;88%B@$$$$$$@B%%%8%@$@$@@d </text>
+            
+            <clipPath id="asciiRowClip47">
+
+                <rect
+                    x="72.85"
+                    y="464.52"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="1.175s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="473.38"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip47)"
+                xml:space="preserve"
+            > w88BBao*oao*###*M%$$BMWW#&amp;@8MWMWWW&amp;88%B@$$$$$$$@@BBB@$$$@$@%@d </text>
+            
+            <clipPath id="asciiRowClip48">
+
+                <rect
+                    x="72.85"
+                    y="473.38"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="1.200s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="482.24"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip48)"
+                xml:space="preserve"
+            > m%%@$#a**o*#M#M*MB$$WMWM&amp;@%&amp;MMWWMMW8%B@$$$$$$$$B%%@$$B%BBBBB$b </text>
+            
+            <clipPath id="asciiRowClip49">
+
+                <rect
+                    x="72.85"
+                    y="482.24"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="1.225s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="491.10"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip49)"
+                xml:space="preserve"
+            > b@8B$&amp;h*#o*#M#M#WB$%WW#&amp;$%WWWMW&amp;&amp;&amp;8@@$$$$$$$$@%B@$@BBBBB@@$@$d </text>
+            
+            <clipPath id="asciiRowClip50">
+
+                <rect
+                    x="72.85"
+                    y="491.10"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="1.250s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="499.97"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip50)"
+                xml:space="preserve"
+            > h$@@$Bh*#*##WMMMMB$&amp;&amp;W8$%&amp;&amp;WWW&amp;8BB@@$$$$$$$$@%B@@BBB@$$$$$@B$d </text>
+            
+            <clipPath id="asciiRowClip51">
+
+                <rect
+                    x="72.85"
+                    y="499.97"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="1.275s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="508.83"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip51)"
+                xml:space="preserve"
+            > p@B$$$#oMM##MWMMM@%WW8$B%&amp;&amp;W&amp;8B@@@@$$$$$$$$@@@BBB@@$@@@BBBBB$k </text>
+            
+            <clipPath id="asciiRowClip52">
+
+                <rect
+                    x="72.85"
+                    y="508.83"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="1.300s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="517.69"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip52)"
+                xml:space="preserve"
+            > d@B$@$8o#MMMMWMM&amp;BM#8$@88&amp;&amp;&amp;%B@$$$$$$$$$$$$@%8%%BBBB%B%B@@$@$k </text>
+            
+            <clipPath id="asciiRowClip53">
+
+                <rect
+                    x="72.85"
+                    y="517.69"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="1.325s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="526.55"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip53)"
+                xml:space="preserve"
+            > h$@$$$@MMMWWW&amp;&amp;M&amp;W*8$$@%888B@$$$$$$$$$$$$@B%8%%8888%B@$$$$$@$b </text>
+            
+            <clipPath id="asciiRowClip54">
+
+                <rect
+                    x="72.85"
+                    y="526.55"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="1.350s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="535.41"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip54)"
+                xml:space="preserve"
+            > h$@$$$@&amp;MM#MWW8&amp;&amp;o8$$@B8&amp;8B@$$$$$$$$$$$$B8%%%&amp;WW8B@$$$$$$$$@$b </text>
+            
+            <clipPath id="asciiRowClip55">
+
+                <rect
+                    x="72.85"
+                    y="535.41"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="1.375s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="544.28"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip55)"
+                xml:space="preserve"
+            > k@@@@@@%M##WMW8%#8@@@B%8%%@@@@@@@@@@@@@@%%%8WW8B@@@@@@@BB@@B@h </text>
+            
+            <clipPath id="asciiRowClip56">
+
+                <rect
+                    x="72.85"
+                    y="544.28"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="1.400s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="553.14"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip56)"
+                xml:space="preserve"
+            > a$$$$$$$8888B@$$%$$$$$$$$$$$$$$$$$$$$$$$$$B%B@$$$$$$$$$$$$$$$b </text>
+            
+            <clipPath id="asciiRowClip57">
+
+                <rect
+                    x="72.85"
+                    y="553.14"
+                    width="0"
+                    height="11.86"
+                >
+                    <animate
+                        attributeName="width"
+                        from="0"
+                        to="340.30"
+                        begin="1.425s"
+                        dur="0.1s"
+                        fill="freeze"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="72.85"
+                y="562.00"
+                fill="url(#asciiGradient)"
+                font-size="8.86"
+                clip-path="url(#asciiRowClip57)"
+                xml:space="preserve"
+            > -}}}}}}}[[[[[}}[}}}}}}}}}}}}}}}}}}}}}}}}}}[[[}[[}}}}}}[}}}}}}~ </text>
+            </g>
+        <rect
+            x="34"
+            y="36"
+            width="418"
+            height="2"
+            fill="#06B6D4"
+            opacity=".14"
+        >
+            <animate
+                attributeName="y"
+                values="36;574;36"
+                dur="4.5s"
+                repeatCount="indefinite"
+            />
+        </rect>
+
+        </g>
+        
+
+    
+    <g clip-path="url(#rightPanelClip)">
+
+        <rect
+            x="482"
+            y="28"
+            width="670"
+            height="52"
+            fill="#E2E8F0"
+            fill-opacity=".72"
+        />
+
+
+        <circle
+            cx="506"
+            cy="54"
+            r="6"
+            fill="#DC2626"
+        />
+
+
+        <circle
+            cx="526"
+            cy="54"
+            r="6"
+            fill="#D97706"
+        />
+
+
+        <circle
+            cx="546"
+            cy="54"
+            r="6"
+            fill="#16A34A"
+        />
+
+
+        <text
+            x="574"
+            y="60"
+            fill="#475569"
+            font-size="13"
+        >anoop@github: ~</text>
+
+    </g>
+    
+
+    <g clip-path="url(#rightPanelClip)">
+    <g opacity="0">
+
+        
+    <text
+        x="520"
+        y="116"
+        fill="#475569"
+        font-size="17"
+    >Hi 👋</text>
+    
+
+        <animate
+            attributeName="opacity"
+            from="0"
+            to="1"
+            begin="0.8s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+        <animateTransform
+            attributeName="transform"
+            type="translate"
+            from="0 8"
+            to="0 0"
+            begin="0.8s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+    </g>
+    
+    <g opacity="0">
+
+        
+    <text
+        x="520"
+        y="158"
+        fill="#0F172A"
+        font-size="31"
+        font-weight="700"
+    >I'm Anoop Prakash</text>
+    
+
+        <animate
+            attributeName="opacity"
+            from="0"
+            to="1"
+            begin="1.2s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+        <animateTransform
+            attributeName="transform"
+            type="translate"
+            from="0 8"
+            to="0 0"
+            begin="1.2s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+    </g>
+    <g class="typing-roles">
+            <clipPath id="roleClip0">
+
+                <rect
+                    x="520"
+                    y="178"
+                    width="0"
+                    height="30"
+                >
+                    <animate
+                        attributeName="width"
+                        values="0.00;11.00;22.00;33.00;44.00;55.00;66.00;77.00;88.00;99.00;110.00;121.00;132.00;143.00;154.00;165.00;176.00;187.00;198.00;198.00;187.00;176.00;165.00;154.00;143.00;132.00;121.00;110.00;99.00;88.00;77.00;66.00;55.00;44.00;33.00;22.00;11.00;0.00;0.00;0.00"
+                        keyTimes="0.00000000;0.00431911;0.00863821;0.01295732;0.01727642;0.02159553;0.02591463;0.03023374;0.03455285;0.03887195;0.04319106;0.04751016;0.05182927;0.05614837;0.06046748;0.06478659;0.06910569;0.07342480;0.07774390;0.14634146;0.14862805;0.15091463;0.15320122;0.15548780;0.15777439;0.16006098;0.16234756;0.16463415;0.16692073;0.16920732;0.17149390;0.17378049;0.17606707;0.17835366;0.18064024;0.18292683;0.18521341;0.18750000;0.20528455;1.00000000"
+                        dur="19.680s"
+                        calcMode="discrete"
+                        repeatCount="indefinite"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="520"
+                y="198"
+                fill="url(#asciiGradient)"
+                font-size="18"
+                font-weight="600"
+                clip-path="url(#roleClip0)"
+                xml:space="preserve"
+            >Frontend Developer</text>
+            
+            <clipPath id="roleClip1">
+
+                <rect
+                    x="520"
+                    y="178"
+                    width="0"
+                    height="30"
+                >
+                    <animate
+                        attributeName="width"
+                        values="0.00;0.00;11.00;22.00;33.00;44.00;55.00;66.00;77.00;88.00;99.00;110.00;121.00;132.00;143.00;154.00;165.00;176.00;187.00;198.00;209.00;220.00;220.00;209.00;198.00;187.00;176.00;165.00;154.00;143.00;132.00;121.00;110.00;99.00;88.00;77.00;66.00;55.00;44.00;33.00;22.00;11.00;0.00;0.00;0.00"
+                        keyTimes="0.00000000;0.20528455;0.20960366;0.21392276;0.21824187;0.22256098;0.22688008;0.23119919;0.23551829;0.23983740;0.24415650;0.24847561;0.25279472;0.25711382;0.26143293;0.26575203;0.27007114;0.27439024;0.27870935;0.28302846;0.28734756;0.29166667;0.36026423;0.36255081;0.36483740;0.36712398;0.36941057;0.37169715;0.37398374;0.37627033;0.37855691;0.38084350;0.38313008;0.38541667;0.38770325;0.38998984;0.39227642;0.39456301;0.39684959;0.39913618;0.40142276;0.40370935;0.40599593;0.42378049;1.00000000"
+                        dur="19.680s"
+                        calcMode="discrete"
+                        repeatCount="indefinite"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="520"
+                y="198"
+                fill="url(#asciiGradient)"
+                font-size="18"
+                font-weight="600"
+                clip-path="url(#roleClip1)"
+                xml:space="preserve"
+            >Full Stack Developer</text>
+            
+            <clipPath id="roleClip2">
+
+                <rect
+                    x="520"
+                    y="178"
+                    width="0"
+                    height="30"
+                >
+                    <animate
+                        attributeName="width"
+                        values="0.00;0.00;11.00;22.00;33.00;44.00;55.00;66.00;77.00;88.00;99.00;110.00;121.00;132.00;143.00;154.00;165.00;165.00;154.00;143.00;132.00;121.00;110.00;99.00;88.00;77.00;66.00;55.00;44.00;33.00;22.00;11.00;0.00;0.00;0.00"
+                        keyTimes="0.00000000;0.42378049;0.42809959;0.43241870;0.43673780;0.44105691;0.44537602;0.44969512;0.45401423;0.45833333;0.46265244;0.46697154;0.47129065;0.47560976;0.47992886;0.48424797;0.48856707;0.55716463;0.55945122;0.56173780;0.56402439;0.56631098;0.56859756;0.57088415;0.57317073;0.57545732;0.57774390;0.58003049;0.58231707;0.58460366;0.58689024;0.58917683;0.59146341;0.60924797;1.00000000"
+                        dur="19.680s"
+                        calcMode="discrete"
+                        repeatCount="indefinite"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="520"
+                y="198"
+                fill="url(#asciiGradient)"
+                font-size="18"
+                font-weight="600"
+                clip-path="url(#roleClip2)"
+                xml:space="preserve"
+            >React Developer</text>
+            
+            <clipPath id="roleClip3">
+
+                <rect
+                    x="520"
+                    y="178"
+                    width="0"
+                    height="30"
+                >
+                    <animate
+                        attributeName="width"
+                        values="0.00;0.00;11.00;22.00;33.00;44.00;55.00;66.00;77.00;88.00;99.00;110.00;121.00;121.00;110.00;99.00;88.00;77.00;66.00;55.00;44.00;33.00;22.00;11.00;0.00;0.00;0.00"
+                        keyTimes="0.00000000;0.60924797;0.61356707;0.61788618;0.62220528;0.62652439;0.63084350;0.63516260;0.63948171;0.64380081;0.64811992;0.65243902;0.65675813;0.72535569;0.72764228;0.72992886;0.73221545;0.73450203;0.73678862;0.73907520;0.74136179;0.74364837;0.74593496;0.74822154;0.75050813;0.76829268;1.00000000"
+                        dur="19.680s"
+                        calcMode="discrete"
+                        repeatCount="indefinite"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="520"
+                y="198"
+                fill="url(#asciiGradient)"
+                font-size="18"
+                font-weight="600"
+                clip-path="url(#roleClip3)"
+                xml:space="preserve"
+            >UI Engineer</text>
+            
+            <clipPath id="roleClip4">
+
+                <rect
+                    x="520"
+                    y="178"
+                    width="0"
+                    height="30"
+                >
+                    <animate
+                        attributeName="width"
+                        values="0.00;0.00;11.00;22.00;33.00;44.00;55.00;66.00;77.00;88.00;99.00;110.00;121.00;132.00;143.00;154.00;165.00;176.00;187.00;198.00;209.00;220.00;231.00;242.00;242.00;231.00;220.00;209.00;198.00;187.00;176.00;165.00;154.00;143.00;132.00;121.00;110.00;99.00;88.00;77.00;66.00;55.00;44.00;33.00;22.00;11.00;0.00;0.00"
+                        keyTimes="0.00000000;0.76829268;0.77261179;0.77693089;0.78125000;0.78556911;0.78988821;0.79420732;0.79852642;0.80284553;0.80716463;0.81148374;0.81580285;0.82012195;0.82444106;0.82876016;0.83307927;0.83739837;0.84171748;0.84603659;0.85035569;0.85467480;0.85899390;0.86331301;0.93191057;0.93419715;0.93648374;0.93877033;0.94105691;0.94334350;0.94563008;0.94791667;0.95020325;0.95248984;0.95477642;0.95706301;0.95934959;0.96163618;0.96392276;0.96620935;0.96849593;0.97078252;0.97306911;0.97535569;0.97764228;0.97992886;0.98221545;1.00000000"
+                        dur="19.680s"
+                        calcMode="discrete"
+                        repeatCount="indefinite"
+                    />
+                </rect>
+
+            </clipPath>
+
+
+            <text
+                x="520"
+                y="198"
+                fill="url(#asciiGradient)"
+                font-size="18"
+                font-weight="600"
+                clip-path="url(#roleClip4)"
+                xml:space="preserve"
+            >Open Source Enthusiast</text>
+            
+        <rect
+            x="523"
+            y="181"
+            width="9"
+            height="21"
+            rx="2"
+            fill="#0891B2"
+        >
+            <animate
+                attributeName="x"
+                values="523.00;523.00;534.00;545.00;556.00;567.00;578.00;589.00;600.00;611.00;622.00;633.00;644.00;655.00;666.00;677.00;688.00;699.00;710.00;721.00;721.00;710.00;699.00;688.00;677.00;666.00;655.00;644.00;633.00;622.00;611.00;600.00;589.00;578.00;567.00;556.00;545.00;534.00;523.00;523.00;523.00;534.00;545.00;556.00;567.00;578.00;589.00;600.00;611.00;622.00;633.00;644.00;655.00;666.00;677.00;688.00;699.00;710.00;721.00;732.00;743.00;743.00;732.00;721.00;710.00;699.00;688.00;677.00;666.00;655.00;644.00;633.00;622.00;611.00;600.00;589.00;578.00;567.00;556.00;545.00;534.00;523.00;523.00;523.00;534.00;545.00;556.00;567.00;578.00;589.00;600.00;611.00;622.00;633.00;644.00;655.00;666.00;677.00;688.00;688.00;677.00;666.00;655.00;644.00;633.00;622.00;611.00;600.00;589.00;578.00;567.00;556.00;545.00;534.00;523.00;523.00;523.00;534.00;545.00;556.00;567.00;578.00;589.00;600.00;611.00;622.00;633.00;644.00;644.00;633.00;622.00;611.00;600.00;589.00;578.00;567.00;556.00;545.00;534.00;523.00;523.00;523.00;534.00;545.00;556.00;567.00;578.00;589.00;600.00;611.00;622.00;633.00;644.00;655.00;666.00;677.00;688.00;699.00;710.00;721.00;732.00;743.00;754.00;765.00;765.00;754.00;743.00;732.00;721.00;710.00;699.00;688.00;677.00;666.00;655.00;644.00;633.00;622.00;611.00;600.00;589.00;578.00;567.00;556.00;545.00;534.00;523.00;523.00"
+                keyTimes="0.00000000;0.00000005;0.00431911;0.00863821;0.01295732;0.01727642;0.02159553;0.02591463;0.03023374;0.03455285;0.03887195;0.04319106;0.04751016;0.05182927;0.05614837;0.06046748;0.06478659;0.06910569;0.07342480;0.07774390;0.14634146;0.14862805;0.15091463;0.15320122;0.15548780;0.15777439;0.16006098;0.16234756;0.16463415;0.16692073;0.16920732;0.17149390;0.17378049;0.17606707;0.17835366;0.18064024;0.18292683;0.18521341;0.18750000;0.20528455;0.20528460;0.20960366;0.21392276;0.21824187;0.22256098;0.22688008;0.23119919;0.23551829;0.23983740;0.24415650;0.24847561;0.25279472;0.25711382;0.26143293;0.26575203;0.27007114;0.27439024;0.27870935;0.28302846;0.28734756;0.29166667;0.36026423;0.36255081;0.36483740;0.36712398;0.36941057;0.37169715;0.37398374;0.37627033;0.37855691;0.38084350;0.38313008;0.38541667;0.38770325;0.38998984;0.39227642;0.39456301;0.39684959;0.39913618;0.40142276;0.40370935;0.40599593;0.42378049;0.42378054;0.42809959;0.43241870;0.43673780;0.44105691;0.44537602;0.44969512;0.45401423;0.45833333;0.46265244;0.46697154;0.47129065;0.47560976;0.47992886;0.48424797;0.48856707;0.55716463;0.55945122;0.56173780;0.56402439;0.56631098;0.56859756;0.57088415;0.57317073;0.57545732;0.57774390;0.58003049;0.58231707;0.58460366;0.58689024;0.58917683;0.59146341;0.60924797;0.60924802;0.61356707;0.61788618;0.62220528;0.62652439;0.63084350;0.63516260;0.63948171;0.64380081;0.64811992;0.65243902;0.65675813;0.72535569;0.72764228;0.72992886;0.73221545;0.73450203;0.73678862;0.73907520;0.74136179;0.74364837;0.74593496;0.74822154;0.75050813;0.76829268;0.76829273;0.77261179;0.77693089;0.78125000;0.78556911;0.78988821;0.79420732;0.79852642;0.80284553;0.80716463;0.81148374;0.81580285;0.82012195;0.82444106;0.82876016;0.83307927;0.83739837;0.84171748;0.84603659;0.85035569;0.85467480;0.85899390;0.86331301;0.93191057;0.93419715;0.93648374;0.93877033;0.94105691;0.94334350;0.94563008;0.94791667;0.95020325;0.95248984;0.95477642;0.95706301;0.95934959;0.96163618;0.96392276;0.96620935;0.96849593;0.97078252;0.97306911;0.97535569;0.97764228;0.97992886;0.98221545;1.00000000"
+                dur="19.680s"
+                calcMode="discrete"
+                repeatCount="indefinite"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;1;0;0"
+                keyTimes="0;.48;.48;1"
+                dur=".8s"
+                repeatCount="indefinite"
+            />
+        </rect>
+        </g>
+    <g opacity="0">
+
+        
+        <g class="profile-info-row">
+
+            
+        <text
+            x="520"
+            y="240"
+            fill="#475569"
+            font-size="14"
+        >Location</text>
+
+
+        <text
+            x="625"
+            y="240"
+            fill="#06B6D4"
+            font-size="14"
+        >:</text>
+        
+
+            
+            <a
+                href="https://www.google.com/maps/search/?api=1&amp;query=Jaipur%2C+India"
+                
+                target="_blank"
+                rel="noopener noreferrer"
+                
+                aria-label="Open Jaipur, India in Google Maps"
+            >
+                <g class="profile-link">
+
+                    <rect
+                        class="profile-hitbox"
+                        x="641"
+                        y="222"
+                        width="117.20"
+                        height="25"
+                        rx="5"
+                    />
+
+
+                    <text
+                        x="645"
+                        y="240"
+                        fill="#0F172A"
+                        font-size="14"
+                    >Jaipur, India</text>
+
+
+                    <line
+                        class="profile-underline"
+                        x1="645"
+                        y1="245"
+                        x2="754.20"
+                        y2="245"
+                        stroke="#06B6D4"
+                        stroke-width="1.3"
+                        pathLength="1"
+                    />
+
+                </g>
+            </a>
+            
+
+        </g>
+        
+
+        <animate
+            attributeName="opacity"
+            from="0"
+            to="1"
+            begin="2.4s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+        <animateTransform
+            attributeName="transform"
+            type="translate"
+            from="0 8"
+            to="0 0"
+            begin="2.4s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+    </g>
+    
+    <g opacity="0">
+
+        
+        <g class="profile-info-row">
+
+            
+        <text
+            x="520"
+            y="271"
+            fill="#475569"
+            font-size="14"
+        >Education</text>
+
+
+        <text
+            x="625"
+            y="271"
+            fill="#06B6D4"
+            font-size="14"
+        >:</text>
+        
+
+            
+            <text
+                x="645"
+                y="271"
+                fill="#0F172A"
+                font-size="14"
+            >Bachelor of Computer Applications</text>
+            
+
+        </g>
+        
+
+        <animate
+            attributeName="opacity"
+            from="0"
+            to="1"
+            begin="2.6799999999999997s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+        <animateTransform
+            attributeName="transform"
+            type="translate"
+            from="0 8"
+            to="0 0"
+            begin="2.6799999999999997s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+    </g>
+    
+    <g opacity="0">
+
+        
+        <g class="profile-info-row">
+
+            
+        <text
+            x="520"
+            y="302"
+            fill="#475569"
+            font-size="14"
+        >Current Focus</text>
+
+
+        <text
+            x="625"
+            y="302"
+            fill="#06B6D4"
+            font-size="14"
+        >:</text>
+        
+
+            
+            <text
+                x="645"
+                y="302"
+                fill="#0F172A"
+                font-size="14"
+            >Building Modern Web Applications</text>
+            
+
+        </g>
+        
+
+        <animate
+            attributeName="opacity"
+            from="0"
+            to="1"
+            begin="2.96s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+        <animateTransform
+            attributeName="transform"
+            type="translate"
+            from="0 8"
+            to="0 0"
+            begin="2.96s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+    </g>
+    
+    <g opacity="0">
+
+        
+        <g class="profile-info-row">
+
+            
+        <text
+            x="520"
+            y="333"
+            fill="#475569"
+            font-size="14"
+        >Portfolio</text>
+
+
+        <text
+            x="625"
+            y="333"
+            fill="#06B6D4"
+            font-size="14"
+        >:</text>
+        
+
+            
+            <a
+                href="https://anoopdev.vercel.app/"
+                
+                target="_blank"
+                rel="noopener noreferrer"
+                
+                aria-label="Open Anoop Prakash portfolio website"
+            >
+                <g class="profile-link">
+
+                    <rect
+                        class="profile-hitbox"
+                        x="641"
+                        y="315"
+                        width="167.60"
+                        height="25"
+                        rx="5"
+                    />
+
+
+                    <text
+                        x="645"
+                        y="333"
+                        fill="#0F172A"
+                        font-size="14"
+                    >anoopdev.vercel.app</text>
+
+
+                    <line
+                        class="profile-underline"
+                        x1="645"
+                        y1="338"
+                        x2="804.60"
+                        y2="338"
+                        stroke="#06B6D4"
+                        stroke-width="1.3"
+                        pathLength="1"
+                    />
+
+                </g>
+            </a>
+            
+
+        </g>
+        
+
+        <animate
+            attributeName="opacity"
+            from="0"
+            to="1"
+            begin="3.24s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+        <animateTransform
+            attributeName="transform"
+            type="translate"
+            from="0 8"
+            to="0 0"
+            begin="3.24s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+    </g>
+    
+    <g opacity="0">
+
+        
+        <g class="profile-info-row">
+
+            
+        <text
+            x="520"
+            y="364"
+            fill="#475569"
+            font-size="14"
+        >Email</text>
+
+
+        <text
+            x="625"
+            y="364"
+            fill="#06B6D4"
+            font-size="14"
+        >:</text>
+        
+
+            
+            <a
+                href="mailto:anoopprakash2208@gmail.com"
+                
+                aria-label="Send email to Anoop Prakash"
+            >
+                <g class="profile-link">
+
+                    <rect
+                        class="profile-hitbox"
+                        x="641"
+                        y="346"
+                        width="226.40"
+                        height="25"
+                        rx="5"
+                    />
+
+
+                    <text
+                        x="645"
+                        y="364"
+                        fill="#0F172A"
+                        font-size="14"
+                    >anoopprakash2208@gmail.com</text>
+
+
+                    <line
+                        class="profile-underline"
+                        x1="645"
+                        y1="369"
+                        x2="863.40"
+                        y2="369"
+                        stroke="#06B6D4"
+                        stroke-width="1.3"
+                        pathLength="1"
+                    />
+
+                </g>
+            </a>
+            
+
+        </g>
+        
+
+        <animate
+            attributeName="opacity"
+            from="0"
+            to="1"
+            begin="3.52s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+        <animateTransform
+            attributeName="transform"
+            type="translate"
+            from="0 8"
+            to="0 0"
+            begin="3.52s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+    </g>
+    
+    <g opacity="0">
+
+        
+    <text
+        x="520"
+        y="420"
+        fill="#475569"
+        font-size="13"
+        font-weight="600"
+    >SKILLS</text>
+    
+
+        <animate
+            attributeName="opacity"
+            from="0"
+            to="1"
+            begin="4.0s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+        <animateTransform
+            attributeName="transform"
+            type="translate"
+            from="0 8"
+            to="0 0"
+            begin="4.0s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+    </g>
+    
+    <g opacity="0">
+
+        
+        <g>
+
+            <rect
+                x="520.00"
+                y="441.00"
+                width="69.50"
+                height="29"
+                rx="14.5"
+                fill="#FFFFFF"
+                stroke="#CBD5E1"
+            >
+                <animate
+                    attributeName="stroke-opacity"
+                    values=".4;1;.4"
+                    dur="2.2s"
+                    repeatCount="indefinite"
+                />
+            </rect>
+
+
+            <text
+                x="534.00"
+                y="460.00"
+                fill="#0F172A"
+                font-size="12"
+            >React</text>
+
+        </g>
+        
+
+        <animate
+            attributeName="opacity"
+            from="0"
+            to="1"
+            begin="4.2s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+        <animateTransform
+            attributeName="transform"
+            type="translate"
+            from="0 8"
+            to="0 0"
+            begin="4.2s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+    </g>
+    
+    <g opacity="0">
+
+        
+        <g>
+
+            <rect
+                x="599.50"
+                y="441.00"
+                width="111.00"
+                height="29"
+                rx="14.5"
+                fill="#FFFFFF"
+                stroke="#CBD5E1"
+            >
+                <animate
+                    attributeName="stroke-opacity"
+                    values=".4;1;.4"
+                    dur="2.3000000000000003s"
+                    repeatCount="indefinite"
+                />
+            </rect>
+
+
+            <text
+                x="613.50"
+                y="460.00"
+                fill="#0F172A"
+                font-size="12"
+            >TypeScript</text>
+
+        </g>
+        
+
+        <animate
+            attributeName="opacity"
+            from="0"
+            to="1"
+            begin="4.32s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+        <animateTransform
+            attributeName="transform"
+            type="translate"
+            from="0 8"
+            to="0 0"
+            begin="4.32s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+    </g>
+    
+    <g opacity="0">
+
+        
+        <g>
+
+            <rect
+                x="720.50"
+                y="441.00"
+                width="111.00"
+                height="29"
+                rx="14.5"
+                fill="#FFFFFF"
+                stroke="#CBD5E1"
+            >
+                <animate
+                    attributeName="stroke-opacity"
+                    values=".4;1;.4"
+                    dur="2.4000000000000004s"
+                    repeatCount="indefinite"
+                />
+            </rect>
+
+
+            <text
+                x="734.50"
+                y="460.00"
+                fill="#0F172A"
+                font-size="12"
+            >JavaScript</text>
+
+        </g>
+        
+
+        <animate
+            attributeName="opacity"
+            from="0"
+            to="1"
+            begin="4.44s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+        <animateTransform
+            attributeName="transform"
+            type="translate"
+            from="0 8"
+            to="0 0"
+            begin="4.44s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+    </g>
+    
+    <g opacity="0">
+
+        
+        <g>
+
+            <rect
+                x="841.50"
+                y="441.00"
+                width="86.10"
+                height="29"
+                rx="14.5"
+                fill="#FFFFFF"
+                stroke="#CBD5E1"
+            >
+                <animate
+                    attributeName="stroke-opacity"
+                    values=".4;1;.4"
+                    dur="2.5s"
+                    repeatCount="indefinite"
+                />
+            </rect>
+
+
+            <text
+                x="855.50"
+                y="460.00"
+                fill="#0F172A"
+                font-size="12"
+            >Node.js</text>
+
+        </g>
+        
+
+        <animate
+            attributeName="opacity"
+            from="0"
+            to="1"
+            begin="4.5600000000000005s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+        <animateTransform
+            attributeName="transform"
+            type="translate"
+            from="0 8"
+            to="0 0"
+            begin="4.5600000000000005s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+    </g>
+    
+    <g opacity="0">
+
+        
+        <g>
+
+            <rect
+                x="937.60"
+                y="441.00"
+                width="77.80"
+                height="29"
+                rx="14.5"
+                fill="#FFFFFF"
+                stroke="#CBD5E1"
+            >
+                <animate
+                    attributeName="stroke-opacity"
+                    values=".4;1;.4"
+                    dur="2.6s"
+                    repeatCount="indefinite"
+                />
+            </rect>
+
+
+            <text
+                x="951.60"
+                y="460.00"
+                fill="#0F172A"
+                font-size="12"
+            >Python</text>
+
+        </g>
+        
+
+        <animate
+            attributeName="opacity"
+            from="0"
+            to="1"
+            begin="4.68s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+        <animateTransform
+            attributeName="transform"
+            type="translate"
+            from="0 8"
+            to="0 0"
+            begin="4.68s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+    </g>
+    
+    <g opacity="0">
+
+        
+        <g>
+
+            <rect
+                x="1025.40"
+                y="441.00"
+                width="69.50"
+                height="29"
+                rx="14.5"
+                fill="#FFFFFF"
+                stroke="#CBD5E1"
+            >
+                <animate
+                    attributeName="stroke-opacity"
+                    values=".4;1;.4"
+                    dur="2.7s"
+                    repeatCount="indefinite"
+                />
+            </rect>
+
+
+            <text
+                x="1039.40"
+                y="460.00"
+                fill="#0F172A"
+                font-size="12"
+            >MySQL</text>
+
+        </g>
+        
+
+        <animate
+            attributeName="opacity"
+            from="0"
+            to="1"
+            begin="4.8s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+        <animateTransform
+            attributeName="transform"
+            type="translate"
+            from="0 8"
+            to="0 0"
+            begin="4.8s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+    </g>
+    
+    <g opacity="0">
+
+        
+        <g>
+
+            <rect
+                x="520.00"
+                y="481.00"
+                width="61.20"
+                height="29"
+                rx="14.5"
+                fill="#FFFFFF"
+                stroke="#CBD5E1"
+            >
+                <animate
+                    attributeName="stroke-opacity"
+                    values=".4;1;.4"
+                    dur="2.8000000000000003s"
+                    repeatCount="indefinite"
+                />
+            </rect>
+
+
+            <text
+                x="534.00"
+                y="500.00"
+                fill="#0F172A"
+                font-size="12"
+            >SCSS</text>
+
+        </g>
+        
+
+        <animate
+            attributeName="opacity"
+            from="0"
+            to="1"
+            begin="4.92s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+        <animateTransform
+            attributeName="transform"
+            type="translate"
+            from="0 8"
+            to="0 0"
+            begin="4.92s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+    </g>
+    
+    <g opacity="0">
+
+        
+        <g>
+
+            <rect
+                x="591.20"
+                y="481.00"
+                width="52.90"
+                height="29"
+                rx="14.5"
+                fill="#FFFFFF"
+                stroke="#CBD5E1"
+            >
+                <animate
+                    attributeName="stroke-opacity"
+                    values=".4;1;.4"
+                    dur="2.9000000000000004s"
+                    repeatCount="indefinite"
+                />
+            </rect>
+
+
+            <text
+                x="605.20"
+                y="500.00"
+                fill="#0F172A"
+                font-size="12"
+            >Git</text>
+
+        </g>
+        
+
+        <animate
+            attributeName="opacity"
+            from="0"
+            to="1"
+            begin="5.04s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+        <animateTransform
+            attributeName="transform"
+            type="translate"
+            from="0 8"
+            to="0 0"
+            begin="5.04s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+    </g>
+    
+    <g opacity="0">
+
+        
+    <g class="social-footer">
+
+
+        <a
+            href="https://github.com/Anoop2208Prakash"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Anoop Prakash GitHub profile"
+        >
+            <g class="social-link">
+
+                <rect
+                    class="social-hitbox"
+                    x="515"
+                    y="539"
+                    width="58"
+                    height="28"
+                    rx="6"
+                />
+
+
+                <text
+                    x="520"
+                    y="558"
+                    fill="#06B6D4"
+                    font-size="13"
+                >GitHub</text>
+
+
+                <line
+                    class="social-underline"
+                    x1="520"
+                    y1="563"
+                    x2="566"
+                    y2="563"
+                    stroke="#06B6D4"
+                    stroke-width="1.5"
+                    pathLength="1"
+                />
+
+            </g>
+        </a>
+
+
+        <text
+            x="578"
+            y="558"
+            fill="#475569"
+            font-size="13"
+            pointer-events="none"
+        >•</text>
+
+
+        <a
+            href="https://www.linkedin.com/in/prakash-anoop/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Anoop Prakash LinkedIn profile"
+        >
+            <g class="social-link">
+
+                <rect
+                    class="social-hitbox"
+                    x="587"
+                    y="539"
+                    width="72"
+                    height="28"
+                    rx="6"
+                />
+
+
+                <text
+                    x="592"
+                    y="558"
+                    fill="#06B6D4"
+                    font-size="13"
+                >LinkedIn</text>
+
+
+                <line
+                    class="social-underline"
+                    x1="592"
+                    y1="563"
+                    x2="654"
+                    y2="563"
+                    stroke="#06B6D4"
+                    stroke-width="1.5"
+                    pathLength="1"
+                />
+
+            </g>
+        </a>
+
+
+        <text
+            x="669"
+            y="558"
+            fill="#475569"
+            font-size="13"
+            pointer-events="none"
+        >•</text>
+
+
+        <a
+            href="https://anoopdev.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Anoop Prakash portfolio website"
+        >
+            <g class="social-link">
+
+                <rect
+                    class="social-hitbox"
+                    x="679"
+                    y="539"
+                    width="78"
+                    height="28"
+                    rx="6"
+                />
+
+
+                <text
+                    x="684"
+                    y="558"
+                    fill="#06B6D4"
+                    font-size="13"
+                >Portfolio</text>
+
+
+                <line
+                    class="social-underline"
+                    x1="684"
+                    y1="563"
+                    x2="754"
+                    y2="563"
+                    stroke="#06B6D4"
+                    stroke-width="1.5"
+                    pathLength="1"
+                />
+
+            </g>
+        </a>
+
+    </g>
+    
+
+        <animate
+            attributeName="opacity"
+            from="0"
+            to="1"
+            begin="5.4s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+        <animateTransform
+            attributeName="transform"
+            type="translate"
+            from="0 8"
+            to="0 0"
+            begin="5.4s"
+            dur="0.45s"
+            fill="freeze"
+        />
+
+    </g>
+    </g>
+
+    
+    <g
+        opacity=".08"
+        pointer-events="none"
+    >
+        <path
+            d="
+                M -200 20
+                L 100 20
+                L 580 590
+                L 280 590
+                Z
+            "
+            fill="#FFFFFF"
+        >
+            <animateTransform
+                attributeName="transform"
+                type="translate"
+                values="-500 0;1600 0"
+                dur="9.0s"
+                repeatCount="indefinite"
+            />
+        </path>
+    </g>
+    
+
+</svg>
